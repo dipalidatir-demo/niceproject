@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from wanteat.kwst.net/site/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Feb 2024 08:24:32 GMT -->
+
+<head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NiceHome - Responsive construction Company</title>
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="images/favicon1.ico">
+    
+</head>
+
+<body>
+    <!--loader-->
+    <div class="main-loader">
+        <div class="loader-wrap">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <!--loader end-->
+    <!--  main   -->
+    <div id="main">
+        <a class="logo-holder"><img src="images/logo2.png" alt=""></a>
+        <!--  header  -->
+        <header class="header_half">
+            <div class="header-inner">
+                <div class="header-top_contacts"><a href="#"><span>Call now:</span> +918888899885</a><a
+                        href="#"><span>Write :</span> nicehomeinfra@gmail.com</a></div>
+                <div class="share-btn show-share isShare"></div>
+                <a>
+                    <div class="cart-btn sc_btn" onclick="openOrder()"><strong>Your Order</strong><i
+                      class="fas fa-shopping-bag"></i><span id="order-item-count" class="cart-btn_counter">0</span>
+                    </div>
+                <!-- <div class="header_half-reser_btn show-rb"><span>Book Table</span><i class="fa-thin fa-bookmark"></i></div> -->
+                <div class="cart-btn sc_btn"><strong> Your Cart</strong><i
+                        class="fa-thin fa-basket-shopping-simple"></i><span id="cart-item-count"
+                        class="cart-btn_counter">0</span></div>
+                <div class="nav-button_wrap isvis_hid_menu" id="'home_menu_opt">
+                    <div class="nav-button"><span></span></div>
+                </div>
+                <!-- share-wrapper-->
+                <div class="share-wrapper share-wrapper_half">
+                    <div class="share-inner">
+                        <div class="share-container"></div>
+                    </div>
+                </div>
+                <!-- share-wrapper end -->
+            </div>
+        </header>
+        <!--  header end  -->
+        <!--  header end  -->
+        <!--  navigation -->
+        <div class="hidden_menu-container">
+            <div class="nav-wrapper isvis_menu hiddenmenu">
+                <div class="nav-separator"><span></span></div>
+                <div class="nav-wrap">
+                    <div class="fl-wrap">
+                        <div class="nav_dec"><span></span></div>
+                    </div>
+                    <div class="nav-container fl-wrap">
+                        <!-- nav -->
+                        <nav class="nav-inner" id="menu_init">
+                            <ul>
+                                <li id="home_icon">
+                                    <a href="index.html">Home </a>
+                                </li>
+                                <!-- <li><a href="menu.html" class="act-link"> Menu</a></li> -->
+                            </ul>
+                        </nav>
+                        <!-- nav end-->
+                    </div>
+                    <div class="fl-wrap">
+                        <div class="nav_dec nd_bottom"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-ovelay  fs-wrapper"></div>
+        </div>
+        <!--  navigation  end-->
+        <!--column-image-->
+        <div class="column-image mob-hidden">
+            <div class="border-bg">
+                <div class="bg" data-bg="images/bg/long/1.jpg"></div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <!--column-image end-->
+        <!--column-wrap-->
+        <div class="column-wrap single_colimn-wrap">
+            <!--section-->
+            <div class="content-section column-wrap-section   white-bg" data-scrollax-parent="true" id="sec2">
+                <div class="container small-container">
+                    <div class="section-title">
+                        <button id="backButton" class="back_half-reser_btn_mob">Back</button>
+                        <h4>Your wish list</h4>
+                        <h2>Your Cart</h2>
+                        <h4 id="table-number" style="color:black ; font:bold">Table Number :</h4>
+                        <div class="section-title-separator_wrap">
+                            <div class="section-title-separator"><span></span></div>
+                        </div>
+                    </div>
+                    <!-- CHECKOUT TABLE -->
+                    <div class="checkout-table-container">
+                        <table class="table table-border checkout-table">
+                            <tbody id="cart-items-body">
+                                <!-- Table rows will be dynamically generated here -->
+                            </tbody>
+                        </table>
+                        <!-- COUPON -->
+                        <div class="coupon-holder-wrap fl-wrap">
+                            <div class="row">
+                                <div class="col-md-7">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="total-box">
+                                        <span class="total-item" id="total-price">Total: ₹ 0 /-</span>
+                                        <!-- <a href="checkout.html" class="sb-det_btn">Proceed to Checkout</a>     -->
+                                        <a class="sb-det_btn" onclick="placeOrder()" id="place_ord_btn"> Place Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /COUPON -->
+                    </div>
+
+                    <!-- /CHECKOUT TABLE -->
+                </div>
+                <div class="parallax-element" style="right: 20px; bottom: -50px"
+                    data-scrollax="properties: { translateY: '-150px' }"><img src="images/bg/dec/3.png" alt=""></div>
+                <div class="parallax-element" style="left: 10%; top:20px"
+                    data-scrollax="properties: { translateY: '150px' }"><img src="images/bg/dec/4.png" alt=""></div>
+            </div>
+            <!--section end-->
+        </div>
+        <!--column-wrap end-->
+        <!--footer  -->
+        <div class="height-emulator fl-wrap"></div>
+        <footer class="main-footer column_footer">
+            <div class="main-footer_content fl-wrap">
+                <div class="container small-container">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="footer-social">
+                                    <div class="footer-social-title">Follow us:</div>
+                                    <ul>
+                                        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-inner">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-title">About Us</div>
+                                    <div class="footer-widget-content">
+                                        <div class="footer-box">
+                                            <p> Numerous commentators have also referred to the supposed restaurant
+                                                owner's eccentric habit of touting for custom outside his establishment,
+                                                dressed in aristocratic fashion and brandishing a sword. </p>
+                                        </div>
+                                        <!-- <a href="about.html" class="footer-widget-content-link">Read more</a>                                                    	 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--footer social links-->
+                            <!--subscribe form-->
+                            <div class="col-md-4">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-title">Contact Info </div>
+                                    <div class="footer-widget-content">
+                                        <div class="footer-contacts footer-box">
+                                            <ul>
+                                                <li><span>Call :</span><a href="#">+918888899885</a> , <a
+                                                        href="#"></a></li>
+                                                <li><span>Write :</span><a href="#">nicehomeinfra@gmail.com</a></li>
+                                                <li><span>Find us : </span><a href="#"> 27TH Brooklyn NY</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- <a href="contacts.html" class="footer-widget-content-link">Get in Touch</a>                                                    	 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-title">Opening Hours</div>
+                                    <div class="footer-widget-content">
+                                        <div class="footer-work-time_widget footer-box">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6>Monday to Thurseday</h6>
+                                                    <div class="footer-work-time">
+                                                        10:00 AM<br>
+                                                        10:00 PM
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6>Friday to Sunday</h6>
+                                                    <div class="footer-work-time">
+                                                        10:00 AM<br>
+                                                        11:00 PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <a href="#" class="footer-widget-content-link show-rb">Reserve Table</a>                                                    	 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- subbfooter -->
+                    <div class="subbfooter">
+                        <div class="policy-box">
+                            <span> &#169; Wanteat Restaurant 2024 </span> / All rights reserved.
+                        </div>
+                        <div class="pay_list">
+                            <ul>
+                                <li><i class="fa-brands fa-cc-visa"></i></li>
+                                <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                                <li><i class="fa-brands fa-cc-paypal"></i></li>
+                            </ul>
+                        </div>
+                        <div class="to-top-btn to-top"><i class="fa-solid fa-chevrons-up"></i></div>
+                    </div>
+                    <!-- subbfooter end -->
+                </div>
+                <div class="footer-bg"></div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+    </div>
+    <!-- Main end -->
+    <!--=============== scripts  ===============-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const userRole = localStorage.getItem('userRole');
+        //   const storegItems = sessionStorage.getItem('cart');
+        //   console.log("storegItems===>",);
+          
+                console.log("userRole========>", userRole);
+          // const userRole = "User"; //testing perpose
+          const homeIcon = document.getElementById('home_icon');
+          if(userRole == null || userRole == undefined){
+            homeIcon.style.display = 'none';
+          }
+         else if (userRole.includes(["Admin", "Cheif", "Captein"])) {
+            homeIcon.style.display = "block";
+          } else {
+            homeIcon.style.display = 'none';
+    
+          }
+    
+        });
+      </script>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function() {
+        // Other JavaScript code
+ // Function to parse query parameters from URL
+ function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return "";
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Get the tableNumber from the URL query parameter
+     const tableNumber = getParameterByName('tableNumber');
+        // Function to place the order
+        function placeOrder(flattenedCartItems, generateCartRows, updateCartUI) {
+            console.log("order======>", flattenedCartItems);
+            const orderDetails = flattenedCartItems.map(item => ({
+                name: item.name,
+                quantity: item.quantity,
+                price: item.price,
+                totalPrice:item.totalPrice,
+                imageLink: item.image
+            }));
+            console.log("orderDetails for backend====>",orderDetails);
+            // const tableNumber = 2; // You can set the table number dynamically if needed
+            const tableNumber = flattenedCartItems[0].tableNumber;
+            console.log("tableNumber===========>", tableNumber);
+
+            // Create the request body
+            const requestBody = {
+                tableNumber,
+                orderDetails
+            };
+
+            // Make an AJAX request to place the order
+            fetch('https://resturantapp.azurewebsites.net/api/v1/placeOrder', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(requestBody)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to place order');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Handle successful response
+                    console.log(data.data);
+                    //alert a message 
+                    alert("Successfully order placed ");
+                    // Clear the cart UI
+                    flattenedCartItems.length = 0; // Reset flattenedCartItems to an empty array
+
+                    // Regenerate the cart UI
+                    generateCartRows(flattenedCartItems);
+
+                    // Update the cart item count UI
+                    updateCartUI(0);
+                    //update stored data 
+                    // updateURLParams(flattenedCartItems);
+
+                      // Clear the cart items from sessionStorage
+                      sessionStorage.removeItem('cart');
+
+                      //update unPaidQnt of session storage 
+
+                      sessionStorage.setItem('unPaidItemsQnt', data.data.orderDetails.length);
+
+                      updateOrdertUI(data.data.orderDetails.length);
+
+                    // Clear the cart items from localStorage
+                    localStorage.removeItem('cartItems');
+                    // Construct the URL with both tableNumber and orderId parameters
+                    var orderPageUrl = 'order.html?tableNumber=' + tableNumber + '&orderId=' + data.data._id;
+                    console.log("orderPageUrl====", orderPageUrl);
+
+                    // Redirect to the order.html page with the tableNumber parameter
+                    window.location.href = orderPageUrl;
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error placing order:', error);
+                    // Optionally, you can show an error message to the user
+                    alert(error.message);
+                });
+        }
+    </script>
+
+<script>
+    let cartItems = []; // Define cartItems in the global scope  
+    function updateOrdertUI(itemQuantity) {
+      const orderItemCount = document.getElementById('order-item-count');
+      if(itemQuantity ){
+      orderItemCount.textContent = itemQuantity;
+      }else{
+      orderItemCount.textContent = 0 ;
+      }
+    }
+    // Function to update cart icon and count
+    function updateCartUI(itemQuantity) {
+        const cartItemCount = document.getElementById('cart-item-count');
+        cartItemCount.textContent = itemQuantity;
+    }
+
+   // Function to remove an item from the cart and update the UI
+   function removeCartItem(itemIndex) {
+        cartItems.splice(itemIndex, 1); // Remove the item from the cartItems array
+        // Update sessionStorage with the modified cart
+        sessionStorage.setItem('cart', JSON.stringify(cartItems));
+        // Regenerate table rows
+        generateCartRows(cartItems);
+        // Update cart item count
+        updateCartUI(cartItems.length);
+    }
+
+    // Function to update quantity when changed manually
+    function updateQuantity(index, newQuantity) {
+        cartItems[index].quantity = parseInt(newQuantity);
+        cartItems[index].totalPrice = cartItems[index].price * parseInt(newQuantity); // Update total price for the item
+        sessionStorage.setItem('cart', JSON.stringify(cartItems));
+        generateCartRows(cartItems);
+    }
+
+    // Function to increment quantity
+    function incrementQuantity(index) {
+        cartItems[index].quantity++;
+        cartItems[index].totalPrice = cartItems[index].price * cartItems[index].quantity; // Update total price for the item
+        sessionStorage.setItem('cart', JSON.stringify(cartItems));
+        generateCartRows(cartItems);
+    }
+
+    // Function to decrement quantity
+    function decrementQuantity(index) {
+        if (cartItems[index].quantity > 1) {
+            cartItems[index].quantity--;
+            cartItems[index].totalPrice = cartItems[index].price * cartItems[index].quantity; // Update total price for the item
+            sessionStorage.setItem('cart', JSON.stringify(cartItems));
+            generateCartRows(cartItems);
+        }
+    }
+
+    function openOrder() {
+        // console.log(cartItems[0].tableNumber ,"=================table number form cart");
+      // Redirect to the menu page with atblkeNumber 
+      var orderPageURL = 'order.html?tableNumber=' + tableNumber;
+
+      // Redirect to the order.html page with the tableNumber parameter
+      window.location.href = orderPageURL;
+      console.log("Open order clicked");
+    }
+        
+ // Function to generate table rows for cart items
+ function generateCartRows(cartItems) {
+            const tableBody = document.querySelector('.checkout-table tbody');
+            const totalPriceElement = document.getElementById('total-price');
+            let totalPrice = 0;
+if(cartItems.length === 0){
+    totalPriceElement.textContent = `Total: ₹ 0 /-`;
+}
+            // Clear existing table rows
+            tableBody.innerHTML = '';
+
+            // Create header row
+            const headerRow = document.createElement('tr');
+            headerRow.innerHTML = `
+              <th class="hidden-xs">Item</th>
+              <th>Description</th>
+              <th class="hidden-xs">Price</th>
+              <th>Count</th>
+              <th>Total Price</th>
+              <th></th>
+            `;
+            tableBody.appendChild(headerRow);
+
+            // Loop through cart items and generate table rows
+            cartItems.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                  <td class="hidden-xs">
+                    <a href="#"><img src="${item.image}" alt="" class="respimg"></a>
+                  </td>
+                  <td>
+                    <h5 class="product-name"> <a href="#">${item.name}</a></h5>
+                  </td>
+                  <td class="hidden-xs">
+                    <h5 class="order-money">₹ ${item.price} /-</h5>
+                  </td>
+                  <td style="text-align: center;">
+                    <div class="count-control" style="display: flex; align-items: center; justify-content: center;">
+                      <button class="count-btn decrement" style="margin-right: 3px; margin-left: 5px;" onclick="decrementQuantity(${index})">-</button>
+                      <input type="number" name="cartin" value="${item.quantity}" max="50" min="1" class="order-count" onchange="updateQuantity(${index}, this.value)">
+                      <button class="count-btn increment" style="margin-left: 3px; margin-right: 5px;" onclick="incrementQuantity(${index})">+</button>
+                    </div>
+                  </td>
+                  <td class="total-price">
+                    <h5 class="order-money">₹ ${item.price * item.quantity} /-</h5>
+                  </td>
+                  <td class="pr-remove">
+                    <a href="#" title="Remove" data-index="${index}" onclick="removeCartItem(${index})"><i class="fas fa-times"></i></a>
+                  </td>
+                `;
+
+                // Update total price
+                totalPrice += item.price * item.quantity;
+                totalPriceElement.textContent = `Total: ₹ ${totalPrice} /-`;
+
+                tableBody.appendChild(row);
+            });
+        }
+  // Add event listener to the "Place Order" button
+  const placeOrderButton = document.querySelector('.sb-det_btn');
+placeOrderButton.addEventListener('click', function () {
+    console.log("placeOrderButton===", cartItems);
+    if (cartItems.length === 0) {
+        alert("Nothing to order, please select items.");
+        return; // Added return statement to exit the function
+    }
+    // Show confirmation dialog
+    const confirmation = confirm("Are you sure you want to place the order?");
+    if (confirmation) {
+        // If user clicks "OK", call the placeOrder function
+        placeOrder(cartItems, generateCartRows, updateCartUI);
+    } else {
+        // If user clicks "Cancel", do nothing
+        console.log("Order cancelled");
+    }
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const backButton = document.getElementById("backButton");
+        console.log("clicking back button====");
+         // Check if the back button element is found
+           if (backButton) {
+             // Add event listener to the back button
+             backButton.addEventListener('click', function() {
+            console.log("calling the back button");
+            //  const cartPageURL  = order.html ;
+            //    window.location.href = cartPageURL;
+      window.history.back();
+    });
+}else{
+    console.log("no history found for back button");
+}
+        // Parse the stored cart items from sessionStorage
+        const storedCart = sessionStorage.getItem('cart');
+        cartItems = storedCart ? JSON.parse(storedCart) : [];
+       const TableNumber = sessionStorage.getItem('tableNumber');
+       let unPaidQnt = sessionStorage.getItem('unPaidItemsQnt');
+
+    //    let unpaidOrderQnty = 0 ;
+       if(unPaidQnt == undefined || unPaidQnt == null){
+        unPaidQnt = 0  ;
+
+       }
+       console.log("unpaidOrderQnty===>", unPaidQnt);
+        // Update the DOM to display the table number
+    const tableNumberElement = document.getElementById('table-number');
+    tableNumberElement.textContent = "Table Number : " + TableNumber;
+    updateOrdertUI(unPaidQnt);
+     
+        // Generate table rows for cart items
+        generateCartRows(cartItems);
+        // Update cart item count
+        updateCartUI(cartItems.length);
+    });
+</script>
+
+
+  
+
+</body>
+
+<!-- Mirrored from wanteat.kwst.net/site/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Feb 2024 08:24:32 GMT -->
+
+</html>
